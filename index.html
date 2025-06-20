@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Bangun Datar & Ruang</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kalkulator Bangun Datar & Ruang</h1>
+
+        <!-- Dropdown 1: Pilih Bangun -->
+        <label for="shape-select">Pilih Jenis Bangun:</label>
+        <select id="shape-select">
+            <option disabled selected>Pilih jenis bangun</option>
+            <optgroup label="Bangun Datar">
+                <option value="persegi">Persegi</option>
+                <option value="persegi-panjang">Persegi Panjang</option>
+                <option value="segitiga">Segitiga</option>
+                <option value="jajar-genjang">Jajar Genjang</option>
+                <option value="belah-ketupat">Belah Ketupat</option>
+                <option value="layang-layang">Layang-layang</option>
+                <option value="trapesium">Trapesium</option>
+                <option value="lingkaran">Lingkaran</option>
+            </optgroup>
+            <optgroup label="Bangun Ruang">
+                <option value="kubus">Kubus</option>
+                <option value="balok">Balok</option>
+                <option value="prisma-segitiga">Prisma Segitiga</option>
+                <option value="tabung">Tabung</option>
+                <option value="limas-segitiga">Limas Segitiga</option>
+                <option value="limas-segiempat">Limas Segiempat</option>
+                <option value="kerucut">Kerucut</option>
+                <option value="bola">Bola</option>
+            </optgroup>
+        </select>
+
+        <!-- Dropdown 2: Pilih Variabel Hasil -->
+        <label for="calc-type-select" id="calc-type-label" style="display: none;">Pilih Yang Ingin Dihitung:</label>
+        <select id="calc-type-select" style="display: none;"></select>
+
+        <!-- Form input akan dimunculkan oleh JS -->
+        <form id="input-form"></form>
+
+        <!-- Hasil akan ditampilkan di sini -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Penting: script.js harus di-load setelah semua elemen di atas -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
